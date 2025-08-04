@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sumasree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Sumasree</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+       <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </nav>
+  </header>
+  <section class="section">
+    <h1>Contact Me</h1>
+    <p><b>Email: </b>sumasreeyempuluru@gmail.com</p>
+  
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/sumasree-yempuluru" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="height:50px;width:50px" alt="LinkedIn" />  linkedin.com/in/sumasree-yempuluru<br>
+      <a href="https://github.com/Sumasree8" target="_blank"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" style="height:50px;width:50px" alt="GitHub" />github.com/Sumasree8
+      </a>
+    </div>
+
+  </section>
+  <!--Contact form-->
+  <section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" >
+    <input type="text" id="name" placeholder="Your Name" required />
+    <br>
+    <input type="email" id="email" placeholder="Your Email" required />
+    <br>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <br>
+    <button type="submit">Send</button>
+    <br>
+  </form>
+  <p id="statusMessage"></p>
+</section>
+<!-- Add Firebase SDKs to contact.html just above </body> -->
+<!-- ✅ Load Firebase SDKs (compat versions) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+<!-- ✅ Your custom JavaScript -->
+<script src="js/script-common.js"></script>
+<script src="js/contact-form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sumasree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Sumasree</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+       <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </nav>
+  </header>
+<section class="section">
+  <h1>Projects</h1>
+
+  <div class="filter-buttons">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="android">Android</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="research">Research</button>
+    <button class="filter-btn" data-filter="research">Engineering Projects</button>
+  </div>
+
+  <div class="projects-container">
+    <div class="project-card" data-category="android">
+      <h3>StreetSmartIndia</h3>
+      <p>Civic Android app for public issue reporting.</p>
+    </div>
+
+    <div class="project-card" data-category="Engineering Projects">
+      <h3>LiFi Data Transfer</h3>
+      <p>Light-based data transfer project.</p>
+    </div>
+
+     <div class="project-card" data-category="Engineering Projects">
+      <h3>Earthquake Detection System</h3>
+      <p> A smart system designed to detect seismic activity in real-time using sensor data and alert users instantly.</p>
+    </div>
+
+    <div class="project-card" data-category="research">
+      <h3>CyberSecurity Data Analysis Using NoSql</h3>
+      <p>Research on using NoSQL for cyber threat analysis.</p>
+      <a href="https://drive.google.com/file/d/1-w3z-REsO712FNs2wHe4FaTBsJQEKxd2/view?usp=sharing" alt="Research work">report pdf</a>
+    </div>
+
+    <div class="project-card" data-category="web">
+      <h3>Portfolio Website</h3>
+      <p>Multi-page portfolio website using HTML, CSS, JS.</p>
+    </div>
+  </div>
+</section>
+<section id="github-projects" class="section">
+  <h2>My GitHub Projects</h2>
+  <div id="project-list" class="project-list">
+    <!-- Projects will be injected here -->
+  </div>
+</section>
+<script src="js/script-common.js"></script>
+<script src="js/projects.js"></script>
+
+</body>
+</html>
