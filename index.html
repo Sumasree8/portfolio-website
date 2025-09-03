@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Sumasree</div>
     <nav>
@@ -19,11 +20,11 @@
         <li><a href="certifications.html">Certifications</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-       <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
-
+      <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
     </nav>
   </header>
 
+  <!-- Home Section -->
   <section class="home">
     <div class="intro">
       <h1>Hi, I'm Sumasree 👋</h1>
@@ -31,52 +32,50 @@
       <a href="contact.html" class="btn">Get in Touch</a>
       <br>
       <button id="download-resume" class="btn">Download Resume</button>
-     <p id="download-status"></p>
-       <p id="download-count">Total Downloads: ...</p>
+      <p id="download-status"></p>
     </div>
 
     <div class="hero-img">
       <img src="images/profile.jpg" alt="Sumasree Profile Image">
     </div>
-   
   </section>
 
-  <!--resume-->
+  <!-- Resume Section -->
   <section id="resume" class="resume-section">
-  <h2>📄 My Resume</h2>
+    <h2>📄 My Resume</h2>
+    <div class="resume-container">
+      <iframe src="assets/resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+    </div>
 
-  <div class="resume-container">
-    <iframe src="assets/resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+    <!-- Admin-only Resume Upload -->
+    <div class="admin-upload" style="margin-top: 20px; display: none;">
+      <label for="upload-resume">🔒 Update Resume:</label>
+      <input type="file" id="upload-resume" accept=".pdf">
+    </div>
+  </section>
+
+  <!-- Admin Login -->
+  <div id="admin-login" class="admin-login">
+    <h3>🔐 Admin Login</h3>
+    <input type="email" id="login-email" placeholder="Email" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button id="login-button">Login</button>
   </div>
-  
-  <!-- Only visible if you’re logged in (optional admin) -->
-  <div class="admin-upload" style="margin-top: 20px;">
-    <label for="upload-resume">🔒 Update Resume:</label>
-    <input type="file" id="upload-resume" accept=".pdf">
+
+  <!-- Admin Logout -->
+  <div id="logout-area" style="display: none;">
+    <p>👋 Logged in as Admin</p>
+    <button id="logout-button">Logout</button>
   </div>
-</section>
-<!--update Resume-->
-<div id="admin-login" class="admin-login">
-  <h3>🔐 Admin Login</h3>
-  <input type="email" id="login-email" placeholder="Email" />
-  <input type="password" id="login-password" placeholder="Password" />
-  <button id="login-button">Login</button>
-</div>
 
-<div id="logout-area" style="display: none;">
-  <p>👋 Logged in as Admin</p>
-  <button id="logout-button">Logout</button>
-</div>
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
 
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
-
-<!-- Your Scripts -->
-<script src="js/script-common.js"></script>
-<script src="js/resume-tracker.js"></script>
-
+  <!-- Your Script -->
+  <script src="js/resume-tracker.js"></script>
+  <script src="js/script-common.js"></script>
 </body>
 </html>
