@@ -161,6 +161,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
+.filter-buttons{
+  
+}
 
 .project-card:hover, .experience-card:hover, .repo-card:hover {
   transform: scale(1.05);
@@ -530,8 +533,8 @@ h1, h2, h3, h4, h5, h6 {
 /*-----------certification---------------*/
 .certifications-section {
   padding: 80px 20px;
-  background-color: #11112a;
-  color: #f1f1f1;
+  background-color: var(--card-color);
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -569,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cert-card {
-  background-color: #1e1e2e;
+  background-color: var(--card-color);
   padding: 20px 15px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
