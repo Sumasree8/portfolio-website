@@ -53,7 +53,7 @@ ul {
   align-items: center;
   padding: 20px 40px;
   background: linear-gradient(135deg, #8b5cf6, #ec4899, #00f6ff);
-  color: white;
+  color:white;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -65,7 +65,7 @@ ul {
   font-size: 24px;
   background: linear-gradient(135deg, #ec4899, #8b5cf6);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color:var(--text-color);
   background-clip: text;
 }
 
@@ -75,7 +75,7 @@ ul {
 }
 
 .nav-links li a {
-  color: black;
+  color: white;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -161,9 +161,36 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
-.filter-buttons{
-  
+/* 🎨 Project Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+.filter-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899); /* palette colors */
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.filter-btn:hover {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6, #6366f1);
+  transform: scale(1.05);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #f59e0b, #f97316); /* active button color */
+  color: #fff;
+  box-shadow: 0px 6px 15px rgba(249,115,22,0.4);
+}
+
 
 .project-card:hover, .experience-card:hover, .repo-card:hover {
   transform: scale(1.05);
