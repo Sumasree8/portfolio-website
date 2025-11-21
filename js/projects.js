@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectList = document.getElementById("project-list");
 
   if (projectList) {
-    fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated`)
+    fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&direction=desc`)
+
       .then(response => response.json())
       .then(repos => {
         repos.slice(0, 6).forEach(repo => {
